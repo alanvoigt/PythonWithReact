@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React
+build/
+dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+*.egg-info/
+*.egg
+*.whl
+*.sqlite3
+
+# Pytest
+.coverage
+.cache
+*.pytest_cache/
+
+# Playwright
+playwright-report/
+*.trace
+
+# Logs
+*.log
+
+# Editor/IDE settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

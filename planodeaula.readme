@@ -1,0 +1,15 @@
+- Conversão Playwright de JS para TS
+- Testes de API
+- Testes unitários
+- Rodar no GitHub Actions
+- Arquitetura de Testes
+- Alteração no Software (negócio/backlog)
+- Planejamento dos testes para a alteração.
+- Testes de regressão
+- Testes de performance
+- IA no processo
+- Atualização dos testes unitários 
+- BDD?
+- Atualização dos testes de API
+- Atualização testes do front
+- Melhorando o sistema para testar melhor
