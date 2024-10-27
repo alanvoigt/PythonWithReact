@@ -37,7 +37,7 @@ jobs:
 
       - name: Start backend server
         run: |
-          python PythonWithReact/app_principal.py & # Executa o backend
+          python app_principal.py & # Executa o backend
           sleep 10 # Tempo para o backend iniciar
 
       - name: Run Python tests
