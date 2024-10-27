@@ -37,24 +37,18 @@ jobs:
 
       - name: Start backend server
         run: |
-          python app_principal.py & # Executa o backend
+          python PythonWithReact/app_principal.py &
           sleep 10 # Tempo para o backend iniciar
 
-      - name: Run Python tests
+      - name: Start React server
+        working-directory: ./cadastro-produto
         run: |
-          pytest tests/
-
-      - name: Install Playwright
-        working-directory: ./tests
-        run: |
-          npm install -D playwright
-
-      - name: Install Playwright browsers
-        working-directory: ./tests
-        run: |
-          npx playwright install
+          npm start &
+          sleep 15 # Tempo para o frontend iniciar
 
       - name: Run Playwright tests
         working-directory: ./tests
         run: |
+          npm install -D playwright
+          npx playwright install
           npx playwright test
