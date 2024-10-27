@@ -37,7 +37,7 @@ jobs:
 
       - name: Start backend server
         run: |
-          python PythonWithReact/app_principal.py &
+          python app_principal.py &
           sleep 10 # Tempo para o backend iniciar
 
       - name: Start React server
