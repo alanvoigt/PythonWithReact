@@ -22,7 +22,7 @@ test("renders form with input fields", () => {
   expect(descricaoInput).toBeInTheDocument();
 
   // Verifica se o botão de cadastrar está presente
-  const cadastrarButton = screen.getByText(/Cadastrar/i);
+  const cadastrarButton = screen.getByRole("button", { name: /Cadastrar/i });
   expect(cadastrarButton).toBeInTheDocument();
 });
 
@@ -32,7 +32,7 @@ test("allows user to add a product to the list", () => {
 
   const nomeInput = screen.getByLabelText(/Nome do Produto:/i);
   const descricaoInput = screen.getByLabelText(/Descrição:/i);
-  const cadastrarButton = screen.getByText(/Cadastrar/i);
+  const cadastrarButton = screen.getByRole("button", { name: /Cadastrar/i });
 
   // Simula a inserção de um nome e descrição do produto
   fireEvent.change(nomeInput, { target: { value: "Produto Teste" } });

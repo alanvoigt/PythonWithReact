@@ -40,17 +40,19 @@ function App() {
       <h1>Cadastrar Produto</h1>
       <form onSubmit={cadastrarProduto}>
         <div>
-          <label>Nome do Produto:</label>
+          <label htmlFor="nomeProduto">Nome do Produto:</label>
           <input
             type="text"
+            id="nomeProduto"
             value={nome}
             onChange={(e) => setNome(e.target.value)}
             required
           />
         </div>
         <div>
-          <label>Descrição:</label>
+          <label htmlFor="descricaoProduto">Descrição:</label>
           <textarea
+            id="descricaoProduto"
             value={descricao}
             onChange={(e) => setDescricao(e.target.value)}
             required
